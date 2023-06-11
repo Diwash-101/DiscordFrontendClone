@@ -1,0 +1,62 @@
+.sidebar {
+  background-color: var(--dark3);
+  width: 70px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 30px;
+  height: 1px;
+  background-color: var(--grey);
+  border: 0;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.Wrapper {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-left: 4px solid var(--grey);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  transition: height 200ms;
+}
+
+.serverIcon {
+  background-color: var(--faded_blue);
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+
+  transition: border-radius 400ms;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.serverIcon:hover {
+  border-radius: 20px;
+}
+
+.serverIcon:hover .Wrapper {
+  height: 20px;
+}
+input[type="radio"]:checked + label .serverIcon {
+  border-radius: 20px;
+}
+input[type="radio"]:checked + label .serverIcon .Wrapper {
+  height: 35px;
+}

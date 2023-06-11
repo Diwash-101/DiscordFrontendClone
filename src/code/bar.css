@@ -1,0 +1,35 @@
+.bar {
+  width: 250px;
+  height: 100vh;
+
+  background-color: var(--dark2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chatName {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.chatName:hover {
+  background-color: rgba(146, 131, 116, 0.2);
+}
+.chatIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: var(--faded_yellow);
+}
+.friendName {
+  flex: 1;
+  margin-left: 5px;
+  justify-self: center;
+  color: var(--faded_purple);
+}
